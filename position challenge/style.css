@@ -1,0 +1,100 @@
+body {
+  overflow-x: hidden;
+  position: relative;
+  background-color: rgb(0, 49, 66);
+  font-family: "Inter", sans-serif;
+  color: rgb(170, 184, 190);
+  font-size: 27px;
+}
+
+p {
+  position: relative;
+  left: 115px;
+}
+
+#p1 {
+  bottom: 110px;
+  width: 600px;
+}
+
+#p2{
+    bottom: 40px;
+    left: 180px;
+}
+
+button {
+  position: relative;
+  left: 115px;
+  bottom: 90px;
+  color: rgb(4, 56, 66);
+  font-size: 25px;
+  background-color: rgb(50, 245, 197);
+  width: 325px;
+  height: 75px;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+h1 {
+  position: relative;
+  bottom: 20px;
+  /* width: 700px; */
+  left: 120px;
+  color: rgb(50, 245, 197);
+  font-family: "Sen", sans-serif;
+  font-size: 170px;
+}
+
+img{
+    position: absolute;
+}
+
+#img1 {
+  left: 120px;
+  top: -75px;
+  width: 130px;
+}
+
+#img2 {
+
+  z-index: -1;
+  top: -20px;
+  left: 20px;
+}
+
+#img3 {
+  right: 382px;
+  top: -30px;
+  z-index: -1;
+}
+
+#img4 {
+  right: 130px;
+  top: -70px;
+}
+
+#img5{
+    right: 130px;
+    top: 280px;
+}
+
+#img6{
+    right: 240px;
+    top: 500px;
+}
+
+#img7{
+    left:785px;
+    top: 305px;
+    /* z-index: -1; */
+}
+
+#img8{
+    top: 670px;
+    left: 115px;
+}
+
+#head-span{
+    position: relative;
+    z-index: -2;
+}
