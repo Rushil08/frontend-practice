@@ -1,0 +1,16 @@
+nav {
+  display: flex;
+  gap: 2px;
+  position: relative;
+  
+}
+
+.nav-item {
+  /* position: relative; */
+  background-color: aquamarine;
+  border-radius: 4px;
+  width: 4rem;
+  height: 2rem;
+  /* justify-content: center;
+  align-items: center; */
+}
