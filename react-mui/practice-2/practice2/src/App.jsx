@@ -1,18 +1,22 @@
 import React from "react";
 import Navbar from "./Navbar";
 import News from "./News";
+import Weather from "./Weather";
+
 import "./styles.css";
-import Grid from '@mui/material/Grid'
-import Container from '@mui/material/Container'
+
+import Container from "@mui/material/Container";
 
 function App() {
   return (
     <>
       <Navbar></Navbar>
+      
+
+      {/* <Weather></Weather> */}
       <Container maxWidth="xl">
-      <News></News> 
+        <News></News>
       </Container>
-       
     </>
   );
 }
