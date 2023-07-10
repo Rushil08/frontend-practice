@@ -13,7 +13,7 @@ function App() {
       <Navbar></Navbar>
       
 
-      {/* <Weather></Weather> */}
+      <Weather></Weather>
       <Container maxWidth="xl">
         <News></News>
       </Container>

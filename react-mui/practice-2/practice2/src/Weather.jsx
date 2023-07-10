@@ -19,14 +19,14 @@ const bull = (
 export default function BasicCard() {
   const [location, setLocation] = useState([]);
   const [weather, setWeather] = useState({});
-  const [isLoaded, setIsLoaded] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     getLoc();
   }, []);
 
   useEffect(() => {
-    getWeather();
+    if (location.length) getWeather();
   }, [location]);
 
   const getLoc = () => {
@@ -37,20 +37,20 @@ export default function BasicCard() {
 
   const getWeather = async () => {
     try {
+      setIsLoaded(false);
       const dataRaw = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?lat=${location[0]}&lon=${location[1]}&appid=89546427df56749cd86d553cce3bae53&units=metric`
       );
       const data = await dataRaw.json();
       setWeather(data);
-      if (data.cod == 200) setIsLoaded(1);
-      else setIsLoaded(0);
+      setIsLoaded(true);
     } catch {
       console.log("Error getting weather data");
     }
   };
 
   return (
-    <Card sx={{ minWidth: 275 }}>
+    <Card sx={{ minWidth: 200, mx: 4, mt: 2 }}>
       <CardContent>
         <Typography variant="h4" color="initial">
           Condition: {isLoaded ? weather.weather[0].description : "Loading"}

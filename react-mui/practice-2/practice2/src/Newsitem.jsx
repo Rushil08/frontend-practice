@@ -8,11 +8,11 @@ import { CardActionArea } from "@mui/material";
 export default function ActionAreaCard(props) {
   return (
     <Card
-      sx={{
-        maxWidth: { md: 300, lg: 445 },
-        Height: { md: 400, lg: 300 },
-        minWidth: { md: 300, lg: 445 },
-      }}
+    // sx={{
+    //   maxWidth: { md: 300, lg: 400 },
+    //   Height: { md: 400, lg: 300 },
+    //   minWidth: { md: 300, lg: 400 },
+    // }}
     >
       <CardActionArea>
         <CardMedia
@@ -30,7 +30,7 @@ export default function ActionAreaCard(props) {
               overflow: "hidden",
               textOverflow: "ellipsis",
               display: "-webkit-box",
-              WebkitLineClamp: "2",
+              WebkitLineClamp: { xs: "4", sm: "4", md: "4", lg: "2" },
               WebkitBoxOrient: "vertical",
             }}
           >
