@@ -39,7 +39,7 @@ export default function BasicCard() {
     try {
       setIsLoaded(false);
       const dataRaw = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${location[0]}&lon=${location[1]}&appid=89546427df56749cd86d553cce3bae53&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${location[0]}&lon=${location[1]}&appid={YOUR_KEY_HERE}&units=metric`
       );
       const data = await dataRaw.json();
       setWeather(data);
