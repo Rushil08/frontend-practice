@@ -31,7 +31,7 @@ function News() {
   const fetchData = async () => {
     try {
       const dataRaw = await fetch(
-        `https://newsapi.org/v2/top-headlines?country=in&apiKey=0bf453e8025a4e658f0fc7625ce7d653&pageSize=12&page=` +
+        `https://newsapi.org/v2/top-headlines?country=in&apiKey={YOUR_KEY_HERE}&pageSize=12&page=` +
           currentPage
       );
       const data = await dataRaw.json();
